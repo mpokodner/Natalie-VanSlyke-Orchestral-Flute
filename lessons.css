@@ -89,7 +89,6 @@ html {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: 3rem;
 }
 
 .hero-background {
@@ -106,7 +105,7 @@ html {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30%;
+  height: 40%;
   background: var(--white);
   z-index: 1;
 }
@@ -116,7 +115,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
+  height: 60%;
   overflow: hidden;
   z-index: 2;
 }
@@ -134,14 +133,14 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(139, 114, 190, 0.6);
-  z-index: 3;
+  background: rgba(139, 114, 190, 0.5);
+  z-index: 4;
 }
 
 .hero-content {
   text-align: center;
   color: var(--white);
-  z-index: 4;
+  z-index: 5;
   position: relative;
 }
 
