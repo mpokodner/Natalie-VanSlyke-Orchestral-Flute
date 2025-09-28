@@ -320,45 +320,150 @@ h6 {
   color: var(--primary-hover);
   transform: scale(1.05);
 }
-
-/* Contact Section */
-.contact {
+/* Lesson Types Section */
+.lesson-types {
+  padding: 5rem 0;
   background: var(--gray-light);
 }
 
-.contact .section-title {
+.lesson-card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.lesson-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--primary-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.lesson-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.lesson-card p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.lesson-features {
+  list-style: none;
+  padding: 0;
   text-align: left;
 }
 
-.contact .section-title::after {
-  left: 0;
-  transform: translateX(0);
-}
-
-.upcoming-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
+.lesson-features li {
+  padding: 0.5rem 0;
   color: var(--text-light);
+  position: relative;
+  padding-left: 1.5rem;
 }
 
-.btn-email {
-  display: inline-flex;
+.lesson-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+/* Contact Section */
+.contact {
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.contact-info {
+  background: var(--primary-light);
+  border-radius: 15px;
+  padding: 2.5rem;
+  height: 100%;
+}
+
+.contact-info h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  color: var(--white);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.contact-form {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border: 2px solid var(--primary-light);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(139, 114, 190, 0.25);
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.btn-submit {
   background: var(--primary-color);
   color: var(--white);
-  text-decoration: none;
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
+  padding: 1rem 3rem;
   border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.btn-email:hover {
+.btn-submit:hover {
   background: var(--primary-hover);
-  color: var(--white);
   transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 114, 190, 0.3);
 }
 
 /* Footer */

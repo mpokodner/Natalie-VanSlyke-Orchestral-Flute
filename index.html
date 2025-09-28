@@ -72,8 +72,7 @@
         class="hero-image"
       />
       <div class="hero-overlay"></div>
-      <div class="hero-content-wrapper">
-
+      <div class="hero-content-wrapper"></div>
     </section>
 
     <!-- About Section -->
@@ -204,17 +203,135 @@
         </div>
       </div>
     </section>
-
-    <!-- Contact Section -->
-    <section class="contact py-5" id="contact">
+    <!-- Lesson Types Section -->
+    <section id="lessons" class="lesson-types">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 class="section-title text-start">Lessons</h2>
-            <a href="mailto:natalie.marie@email.com" class="btn btn-email">
-              <i class="fas fa-envelope"></i>
-              Email
-            </a>
+        <h2 class="section-title">Lesson Options</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="lesson-card">
+              <div class="lesson-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <h3>Private Lessons</h3>
+              <p>
+                One-on-one instruction tailored to your goals and learning style
+              </p>
+              <ul class="lesson-features">
+                <li>Personalized curriculum</li>
+                <li>Flexible scheduling</li>
+                <li>All skill levels welcome</li>
+                <li>30, 45, or 60-minute sessions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="lesson-card">
+              <div class="lesson-icon">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <h3>Online Lessons</h3>
+              <p>Convenient virtual instruction from the comfort of home</p>
+              <ul class="lesson-features">
+                <li>Live video sessions</li>
+                <li>Recording reviews</li>
+                <li>Digital resources included</li>
+                <li>Same quality as in-person</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <strong>Email</strong><br />
+                  lessons@flutestudio.com
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <strong>Phone</strong><br />
+                  (555) 123-4567
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <strong>Location</strong><br />
+                  123 Music Lane<br />
+                  Minneapolis, MN 55401
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <strong>Studio Hours</strong><br />
+                  Monday - Friday: 2PM - 8PM<br />
+                  Saturday: 9AM - 5PM
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" />
+                </div>
+                <div class="mb-3">
+                  <label for="lessonType" class="form-label">Lesson Type</label>
+                  <select class="form-control" id="lessonType" required>
+                    <option value="">Select an option</option>
+                    <option value="private">Private Lessons</option>
+                    <option value="group">Group Classes</option>
+                    <option value="online">Online Lessons</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Tell us about your musical background and goals..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
